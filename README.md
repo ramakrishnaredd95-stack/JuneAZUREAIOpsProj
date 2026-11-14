@@ -6,6 +6,7 @@ Telugu Pickles is a complete microservices, GitOps, observability, progressive-d
 
 - Local application: [`projects/telugu-pickles/LOCAL-SETUP.md`](projects/telugu-pickles/LOCAL-SETUP.md)
 - Azure deployment: [`projects/AzureInfrastructure/README.md`](projects/AzureInfrastructure/README.md)
+- Repeatable Azure runbook: [`projects/AzureInfrastructure/AZURE-RUNBOOK.md`](projects/AzureInfrastructure/AZURE-RUNBOOK.md)
 - Azure AIOps assistant: [`projects/aiops-assistant/README.md`](projects/aiops-assistant/README.md)
 - Azure service inventory and flows: [`docs/AZURE-SERVICE-MAP.md`](docs/AZURE-SERVICE-MAP.md)
 

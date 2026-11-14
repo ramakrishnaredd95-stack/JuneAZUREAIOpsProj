@@ -1,16 +1,19 @@
 # Deploy Telugu Pickles to Microsoft Azure
 
-This is the active cloud platform for the application:
+For the complete repeatable command sequence, troubleshooting record, GitHub
+flow, and destroy/rebuild process, see [`AZURE-RUNBOOK.md`](AZURE-RUNBOOK.md).
 
-| AWS component | Azure component |
+This is the active Azure cloud platform for the application:
+
+| Capability | Azure implementation |
 |---|---|
-| EKS | AKS |
-| ECR | Azure Container Registry |
-| AWS Load Balancer Controller | ingress-nginx + Azure Load Balancer |
-| EBS gp3 | Azure Disk `managed-csi` |
-| CloudWatch | Azure Monitor + Log Analytics |
-| S3 Terraform state | Azure Blob Storage |
-| GitHub AWS OIDC role | GitHub OIDC user-assigned managed identity |
+| Kubernetes | Azure Kubernetes Service (AKS) |
+| Container registry | Azure Container Registry (ACR) |
+| Public ingress | ingress-nginx + Azure Load Balancer |
+| Persistent volumes | Azure Disk `managed-csi` |
+| Logs | Azure Monitor + Log Analytics |
+| Terraform state | Azure Blob Storage |
+| GitHub authentication | GitHub OIDC + user-assigned managed identities |
 
 Argo CD, Argo Rollouts, Prometheus, Grafana, PostgreSQL, and all seven application images remain the same.
 The stack also creates the Azure OpenAI multi-agent AIOps runtime with AKS workload identity and Log Analytics access.
@@ -109,7 +112,7 @@ For a manual review before the first deployment, choose `foundation-plan`. Choos
 
 The stack creates:
 
-- the bootstrap-owned application resource group, VNet, Standard-tier AKS cluster with autoscaling `Standard_D2s_v5` nodes, and a Standard ACR;
+- the bootstrap-owned application resource group, VNet, Standard-tier AKS cluster with autoscaling `Standard_D2s_v3` nodes, and a Standard ACR;
 - Azure Monitor Container Insights and a Log Analytics workspace;
 - ingress-nginx, Argo CD, Argo Rollouts, Prometheus, and Grafana;
 - generated PostgreSQL/JWT/Grafana/AIOps API credentials passed through ephemeral values and write-only provider fields, so they are stored in Kubernetes Secrets but not Terraform plan/state;

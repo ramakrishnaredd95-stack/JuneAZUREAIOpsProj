@@ -38,17 +38,18 @@ resource "azurerm_user_assigned_identity" "aiops" {
 }
 
 resource "azurerm_federated_identity_credential" "aiops" {
-  name      = "aks-aiops"
-  parent_id = azurerm_user_assigned_identity.aiops.id
-  audience  = ["api://AzureADTokenExchange"]
-  issuer    = var.aks_oidc_issuer_url
-  subject   = "system:serviceaccount:${var.app_namespace}:aiops-assistant"
+  name                      = "aks-aiops"
+  user_assigned_identity_id = azurerm_user_assigned_identity.aiops.id
+  audience                  = ["api://AzureADTokenExchange"]
+  issuer                    = var.aks_oidc_issuer_url
+  subject                   = "system:serviceaccount:${var.app_namespace}:aiops-assistant"
 }
 
 resource "azurerm_role_assignment" "openai_user" {
   scope                = azurerm_cognitive_account.openai.id
   role_definition_name = "Cognitive Services OpenAI User"
   principal_id         = azurerm_user_assigned_identity.aiops.principal_id
+  principal_type       = "ServicePrincipal"
 }
 
 resource "azurerm_role_assignment" "logs_reader" {
