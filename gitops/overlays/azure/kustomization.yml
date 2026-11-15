@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - ../../k8s
   - aiops-assistant.yml
-
 patches:
   # Start healthy even if the shared demo manifest is exercising a failed canary.
   - target:
@@ -16,30 +15,29 @@ patches:
       - op: replace
         path: /spec/template/spec/containers/0/env/2/value
         value: "0"
-
 # Azure CI rewrites these names and tags after pushing to ACR.
 images:
   - name: telugu-pickles/aiops-assistant
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/aiops-assistant
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/aiops-assistant
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/frontend
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/frontend
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/frontend
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/gateway
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/gateway
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/gateway
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/auth-service
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/auth-service
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/auth-service
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/catalog-service
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/catalog-service
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/catalog-service
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/cart-service
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/cart-service
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/cart-service
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/order-service
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/order-service
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/order-service
+    newTag: 185b263a7186008db847e894368a74b6c6534080
   - name: telugu-pickles/payment-service
-    newName: CHANGE-ME.azurecr.io/telugu-pickles/payment-service
-    newTag: bootstrap
+    newName: telugupickles4cys9h.azurecr.io/telugu-pickles/payment-service
+    newTag: 185b263a7186008db847e894368a74b6c6534080
