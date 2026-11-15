@@ -10,7 +10,7 @@ variable "subscription_id" {
 
 variable "location" {
   type    = string
-  default = "centralindia"
+  default = "canada central"
 
   validation {
     condition     = length(trimspace(var.location)) > 0
@@ -21,7 +21,7 @@ variable "location" {
 variable "github_repository" {
   description = "GitHub owner/repository name used in the immutable OIDC subject"
   type        = string
-  default     = "ramakrishnaredd95-stack/JuneAWSAIOpsProj"
+  default     = "ramakrishnaredd95-stack/JuneAZUREAIOpsProj"
 
   validation {
     condition     = can(regex("^[^/]+/[^/]+$", var.github_repository))

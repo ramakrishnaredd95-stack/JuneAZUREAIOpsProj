@@ -76,7 +76,9 @@ jobs:
           terraform validate
 
   terraform:
-    if: github.event_name != 'pull_request'
+    # Infrastructure changes must be explicitly requested from workflow_dispatch.
+    # A push to main still runs the security gate, but never applies Terraform.
+    if: github.event_name == 'workflow_dispatch'
     needs: security
     runs-on: ubuntu-latest
     timeout-minutes: 75
