@@ -212,5 +212,5 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.action == 'destroy' && inputs.confirm == 'destroy'
         working-directory: .
         run: |
-          ./scripts/pre-destroy-azure.sh "$TF_VAR_resource_group_name" "$TF_VAR_cluster_name"
+          bash ./scripts/pre-destroy-azure.sh "$TF_VAR_resource_group_name" "$TF_VAR_cluster_name"
           terraform -chdir="$TF_DIR" destroy -auto-approve -lock-timeout=10m
