@@ -1,3 +1,5 @@
-subscription_id  = "00000000-0000-0000-0000-000000000000"
-location          = "canadacentral"
-github_repository = "ramakrishnaredd95-stack/JuneAZUREAIOpsProj"
+subscription_id      = "16d60876-2016-4013-9895-cc00224e539c"
+location             = "canadacentral"
+github_repository    = "ramakrishnaredd95-stack/JuneAZUREAIOpsProj"
+github_owner_id      = "241236789"
+github_repository_id = "1457791112"
