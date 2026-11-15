@@ -36,7 +36,7 @@ env:
   TF_INPUT: "false"
   TF_DIR: projects/AzureInfrastructure
   TF_VAR_subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-  TF_VAR_location: ${{ vars.AZURE_LOCATION || 'centralindia' }}
+  TF_VAR_location: ${{ vars.AZURE_LOCATION || 'canadacentral' }}
   TF_VAR_resource_group_name: ${{ vars.AZURE_RESOURCE_GROUP || 'telugu-pickles-azure' }}
   TF_VAR_cluster_name: ${{ vars.AZURE_AKS_CLUSTER || 'telugu-pickles-aks' }}
   TF_VAR_node_vm_size: ${{ vars.AZURE_AKS_NODE_VM_SIZE || 'Standard_D2s_v3' }}

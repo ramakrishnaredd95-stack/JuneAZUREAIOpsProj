@@ -11,7 +11,7 @@ variable "subscription_id" {
 variable "location" {
   description = "Azure region"
   type        = string
-  default     = "centralindia"
+  default     = "canadacentral"
 
   validation {
     condition     = length(trimspace(var.location)) > 0
@@ -72,7 +72,7 @@ variable "node_max_count" {
 variable "gitops_repo_url" {
   description = "Public Git repository Argo CD watches"
   type        = string
-  default     = "https://github.com/ramakrishnaredd95-stack/JuneAWSAIOpsProj.git"
+  default     = "https://github.com/ramakrishnaredd95-stack/JuneAZUREAIOpsProj.git"
 
   validation {
     condition     = can(regex("^https://", var.gitops_repo_url))

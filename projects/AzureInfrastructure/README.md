@@ -38,7 +38,7 @@ This separation lets you plan, test, or replace a cloud concern without mixing i
 
 - An Azure subscription where you can create role assignments.
 - Azure CLI, Terraform >= 1.10, Git, kubectl, and Azure kubelogin.
-- The public GitHub repository `ramakrishnaredd95-stack/JuneAWSAIOpsProj`.
+- The public GitHub repository `ramakrishnaredd95-stack/JuneAZUREAIOpsProj`.
 
 Sign in from your own PowerShell window:
 
@@ -95,7 +95,7 @@ Add these repository **variables**:
 | `AZURE_TFSTATE_RESOURCE_GROUP` | output `state_resource_group` |
 | `AZURE_TFSTATE_STORAGE_ACCOUNT` | output `state_storage_account` |
 | `AZURE_TFSTATE_CONTAINER` | output `state_container` (normally `tfstate`) |
-| `AZURE_LOCATION` | `centralindia` |
+| `AZURE_LOCATION` | `canadacentral` |
 | `AZURE_RESOURCE_GROUP` | `telugu-pickles-azure` |
 | `AZURE_AKS_CLUSTER` | `telugu-pickles-aks` |
 | `AZURE_AKS_ADMIN_PRINCIPAL_IDS` | JSON list containing `operator_object_id`, for example `["00000000-..."]` |

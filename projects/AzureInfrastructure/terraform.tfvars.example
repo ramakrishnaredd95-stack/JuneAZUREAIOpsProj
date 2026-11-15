@@ -1,9 +1,9 @@
 # Copy to terraform.tfvars for local execution. Never commit credentials.
 subscription_id     = "00000000-0000-0000-0000-000000000000"
-location            = "centralindia"
+location            = "canadacentral"
 resource_group_name = "telugu-pickles-azure"
 cluster_name        = "telugu-pickles-aks"
-gitops_repo_url     = "https://github.com/ramakrishnaredd95-stack/JuneAWSAIOpsProj.git"
+gitops_repo_url     = "https://github.com/ramakrishnaredd95-stack/JuneAZUREAIOpsProj.git"
 aiops_enabled       = true
 aiops_location      = "eastus2"
 aiops_model_name    = "gpt-4o"

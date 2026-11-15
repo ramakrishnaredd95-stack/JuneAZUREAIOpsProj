@@ -139,7 +139,7 @@ Repository variables:
 | `AZURE_TFSTATE_CONTAINER` | `state_container` output |
 | `AZURE_RESOURCE_GROUP` | `app_resource_group` output |
 | `AZURE_AKS_CLUSTER` | `telugu-pickles-aks` |
-| `AZURE_LOCATION` | `centralindia` |
+| `AZURE_LOCATION` | `canadacentral` |
 | `AZURE_AKS_ADMIN_PRINCIPAL_IDS` | JSON list containing `operator_object_id` |
 
 Create a protected GitHub environment called `production`, preferably with a

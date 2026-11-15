@@ -10,7 +10,7 @@ variable "subscription_id" {
 
 variable "location" {
   type    = string
-  default = "canada central"
+  default = "canadacentral"
 
   validation {
     condition     = length(trimspace(var.location)) > 0
