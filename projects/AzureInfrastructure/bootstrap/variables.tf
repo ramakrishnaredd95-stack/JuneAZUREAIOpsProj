@@ -43,7 +43,7 @@ variable "github_owner_id" {
 variable "github_repository_id" {
   description = "Immutable numeric GitHub repository ID"
   type        = string
-  default     = "1449175040"
+  default     = "1457791112"
 
   validation {
     condition     = can(regex("^[0-9]+$", var.github_repository_id))
