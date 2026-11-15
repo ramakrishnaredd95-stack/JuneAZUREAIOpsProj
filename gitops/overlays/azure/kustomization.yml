@@ -19,25 +19,25 @@ patches:
 images:
   - name: telugu-pickles/aiops-assistant
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/aiops-assistant
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/frontend
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/frontend
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/gateway
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/gateway
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/auth-service
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/auth-service
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/catalog-service
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/catalog-service
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/cart-service
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/cart-service
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/order-service
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/order-service
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
   - name: telugu-pickles/payment-service
     newName: telugupickles4cys9h.azurecr.io/telugu-pickles/payment-service
-    newTag: 185b263a7186008db847e894368a74b6c6534080
+    newTag: c92fcf71147e1ef9abeb561124ad17fc9e14d42b
